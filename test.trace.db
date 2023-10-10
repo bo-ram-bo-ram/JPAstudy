@@ -1,0 +1,30 @@
+2023-10-08 17:26:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:29:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:33:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:36:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:40:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:41:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:41:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into MEMBER (name, id) values (?, ?) [42104-214]
+2023-10-08 17:41:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:44:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
+2023-10-08 17:46:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEMBER" not found (this database is empty); SQL statement:
+/* insert hellojpa.Member */ insert into Member (name, id) values (?, ?) [42104-214]
