@@ -1,28 +1,36 @@
 package hellojpa;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
+//@Table(name="MBR")//매핑할때 이름 바꾸고싶으면
 public class Member {
     @Id
     private Long id;
-    private String name;
+    @Column(name = "name",nullable = false)
+    private String username;
 
-    public Long getId() {
-        return id;
-    }
+    private Integer age;
 
-    public String getName() {
-        return name;
-    }
+    @Enumerated(EnumType.STRING)
+    private RoleType roleType;
+    //ordinal하면 enum이 수정됐을때 문제발생함 무조건 string쓰기!
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createdDate;
 
-    public void setName(String name) {
-        this.name = name;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date lastModifiedDate;
+
+    @Lob
+    private String description;
+
+    @Transient
+    private int temp;   //db저장x, 메모리에서만 쓰겟다
+    //Getter, Setter…
+    public Member() {
     }
 }
