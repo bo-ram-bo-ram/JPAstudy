@@ -2,6 +2,7 @@ package jpabook.jpashop;
 
 import jpabook.jpashop.domain.Member;
 import jpabook.jpashop.domain.Order;
+import jpabook.jpashop.domain.OrderItem;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -18,13 +19,19 @@ public class JpaMain {
         //code
 
         try{
-            //객체지향적이지 못해보임
-            Order order = em.find(Order.class,1l);
-            long memberId = order.getMemberId();
-            Member member =em.find(Member.class, memberId);
 
-            //좋은방법
-            Member member1 = order.getMember();
+//            //양방향
+//            Order order = new Order();
+//            order.addOrderItems(new OrderItem());
+
+            //단방향으로해도 문제는 없음
+            Order order = new Order();
+            em.persist(order);
+
+            OrderItem orderItem = new OrderItem();
+            orderItem.setOrder(order);
+
+            em.persist(orderItem);
 
             tx.commit();
 
