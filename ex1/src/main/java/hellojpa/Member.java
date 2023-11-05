@@ -8,6 +8,7 @@ import java.util.Date;
 @Entity
 @SequenceGenerator( name = "MEMBER_SEQ_GENERATOR", sequenceName = "MEMBER_SEQ", //sequenceName : 매핑할 데이터베이스 시퀀스 이름
                     initialValue = 1, allocationSize = 50)//50개 db에 미리 올려놓고 하나씩
+
 //@TableGenerator(
 //        name = "MEMBER_SEQ_GENERATOR",
 //        table = "MY_SEQUENCES",
@@ -36,6 +37,5 @@ import java.util.Date;
         this.username = username;
     }
 
-    public Member() {
-    }
+    public Member() {}
 }
