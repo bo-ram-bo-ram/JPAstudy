@@ -21,7 +21,7 @@ public abstract class Item {
 
     private String name;
     private int price;
-    private int stockQantity;
+    private int stockQuantity;
 
     @ManyToMany
     @JoinTable(name = "category_item")
@@ -31,15 +31,15 @@ public abstract class Item {
     //비즈니스 로직 : 재고 늘고 줄고
     //stock증가
     public void addStock(int quantity){
-        this.stockQantity += quantity;
+        this.stockQuantity += quantity;
     }
     //stock 감소
     public void removeStock(int quantity){
-        int restStock = this.stockQantity - quantity;
+        int restStock = this.stockQuantity - quantity;
         if(restStock<0){
             throw new NotEnoughStockException("need more stock");
         }
-        this.stockQantity=restStock;
+        this.stockQuantity =restStock;
     }
 
     //상품 등록
